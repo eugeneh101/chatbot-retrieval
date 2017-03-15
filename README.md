@@ -1,6 +1,6 @@
 ## README -- Eugene's modification to the Retrieval-Based Conversational Model in Tensorflow (Ubuntu Dialog Corpus)  
 Here's how things work. I cloned the repo at https://github.com/dennybritz/chatbot-retrieval, which runs the LSTM model.
-Primarily, I used git reset --hard e5e2f1ab85d557735ee6d00cd886abe8f320d8fa in order to go a version of the code that had only TensorFlow 0.9 Everything in this folder is Python 3 and TensorFlow 0.9.  
+Primarily, I used git reset --hard e5e2f1ab85d557735ee6d00cd886abe8f320d8fa in order to go a version of the code that had only TensorFlow 0.9 Everything in this folder is Python 3 and TensorFlow 0.9. It appears that the GPU acceleration works on AWS p2 instance, specifically tested and working on p2.xlarge instance. I know that GPU accleration I configured doesn't work on g2.2xlarge instance. You can verify whether GPU acceleration is working or not by typing 'nvidia-smi' in the command line.  
 If you want to train on the Ubuntu corpus, just follow the instructions at https://github.com/augmenthq/DataMining/blob/master/EDA_Notebooks/Eugene/WildML_EC2_Setup_and_AMI.ipynb  
 
 ### Running script  
