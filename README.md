@@ -6,7 +6,8 @@ If you want to train on the Ubuntu corpus, just follow the instructions at https
 ### Running script  
 If you want to perform the analysis on our own data, follow the below steps:  
 
-In the folder 'scripts', make a folder called 'data' and put in the output files from ubuntu-ranking-dataset-creator repo inside 'scripts/data': train.csv, valid.csv, and test.csv.  
+```
+# First, in the folder 'scripts', make a folder called 'data' and put in the output files from ubuntu-ranking-dataset-creator repo inside 'scripts/data': train.csv, valid.csv, and test.csv.  
 
 python prepare_data.py # while inside 'scripts' folder, run this line, which will create some files that are optimized for running the neural net.  
 mv data .. # move 'data' folder to be outside of 'scripts' folder
@@ -17,7 +18,7 @@ python udc_train.py # this code will never stop running. The author of this code
 python udc_test.py --model_dir=... # for example: python udc_test.py --model_dir=runs/143241231
 
 python udc_predict.py --model_dir=...
-
+```
 ---
 
 
